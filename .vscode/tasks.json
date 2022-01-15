@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+    {
+      "type": "npm",
+      "script": "rest:dev",
+      "problemMatcher": [],
+      "label": "npm: rest:dev",
+      "detail": "nodemon --ext ts --exec \"npm run rest:build-dev\""
+    },
+    {
+      "type": "npm",
+      "script": "studio",
+      "problemMatcher": [],
+      "label": "npm: studio",
+      "detail": "npx prisma studio"
+    },
+    {
+      "type": "npm",
+      "script": "rest:test:watch",
+      "group": "build",
+      "problemMatcher": [],
+      "label": "npm: rest:test:watch",
+      "detail": "yarn rest:test --watch"
+    }
+  ]
+}
